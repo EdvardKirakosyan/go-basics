@@ -15,10 +15,11 @@ func main() {
 	outputText("Investment Amount: ")
 	fmt.Scan(&investmentAmount)
 
-	fmt.Print("Investment Amount: ")
+	// fmt.Print("Investment Amount: ")
+	outputText("expectedReturnRate: ")
 	fmt.Scan(&expectedReturnRate)
 
-	fmt.Print("Investment Amount: ")
+	fmt.Print("Years: ")
 	fmt.Scan(&years)
 
 	futureValue := investmentAmount * math.Pow(1+expectedReturnRate/100, years)
